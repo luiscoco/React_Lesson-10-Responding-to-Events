@@ -1,0 +1,99 @@
+:root {
+  --bg: #0b1020;
+  --panel: #11162a;
+  --panel-2: #151b32;
+  --text: #e6e8ef;
+  --muted: #9aa0b4;
+  --primary: #5b8cff;
+  --border: #222a46;
+  --radius: 16px;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background: radial-gradient(1200px 600px at 20% -10%, #14214a 0%, transparent 60%), var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+}
+
+header h1 {
+  margin: 0 0 .25rem 0;
+  font-weight: 800;
+  letter-spacing: .3px;
+}
+
+.muted { color: var(--muted); }
+.small { font-size: .95rem; }
+
+.card {
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+.grid.two {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+.row.center { justify-content: center; }
+.gap > * + * { margin-left: .5rem; }
+
+.btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: #161d36;
+  color: var(--text);
+  padding: .6rem .9rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform .05s ease, box-shadow .2s ease, background .2s ease;
+}
+.btn:hover { box-shadow: 0 6px 16px rgba(0,0,0,.3); }
+.btn:active { transform: translateY(1px); }
+.btn.primary {
+  background: linear-gradient(180deg, #5b8cff, #3d65df);
+  border-color: #2f4aac;
+}
+
+.image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  display: block;
+  margin: 0 auto 1rem;
+}
+
+.input {
+  background: #0f1430;
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: .6rem .8rem;
+  border-radius: 10px;
+  min-width: 220px;
+}
+
+code { background: #0f1430; padding: .2rem .35rem; border-radius: 6px; }
