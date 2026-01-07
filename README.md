@@ -1,4 +1,4 @@
-# React Lesson 10 — Responding to Events (Vite + React 19)
+# React 19.2 - Lesson 10 - Responding to Events
 
 A small, ready-to-run app that demonstrates:
 - `useState` for interactivity
