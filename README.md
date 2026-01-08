@@ -8,7 +8,7 @@ A small, ready-to-run app that demonstrates:
 - `preventDefault` with form submission
 - Side effects within event handlers
 
-## Demo 
+## 1. Demo 
 
 <img width="1399" height="553" alt="image" src="https://github.com/user-attachments/assets/47666c81-151b-46fb-9d94-37cf2e4073b8" />
 
@@ -16,9 +16,9 @@ A small, ready-to-run app that demonstrates:
 
 <img width="1185" height="520" alt="image" src="https://github.com/user-attachments/assets/0193da1d-220a-406c-936f-00d84f9b4a73" />
 
-## Features with Code Snippets
+## 2. Features with Code Snippets
 
-Alert button that reads props inside an inline handler:
+### 2.1. Alert button that reads props inside an inline handler:
 
 ```jsx
 function AlertButton({ message }) {
@@ -26,7 +26,7 @@ function AlertButton({ message }) {
 }
 ```
 
-Toolbar that shows parent bubbling and button `stopPropagation`:
+### 2.2. Toolbar that shows parent bubbling and button `stopPropagation`:
 
 ```jsx
 function Toolbar() {
@@ -52,7 +52,7 @@ function Button({ onClick, children }) {
 }
 ```
 
-Image gallery that cycles through an array with state updates:
+### 2.3. Image gallery that cycles through an array with state updates:
 
 ```jsx
 const images = ['https://picsum.photos/id/237/600/375', '...'];
@@ -71,7 +71,7 @@ function ImageGallery() {
 }
 ```
 
-Counter with state updates triggered by a click:
+### 2.4. Counter with state updates triggered by a click:
 
 ```jsx
 function Counter() {
@@ -80,7 +80,7 @@ function Counter() {
 }
 ```
 
-Form submit handler that prevents page reload:
+### 2.5. Form submit handler that prevents page reload:
 
 ```jsx
 function Signup() {
@@ -98,7 +98,7 @@ function Signup() {
 }
 ```
 
-## Quick Start
+## 3. Quick Start
 
 ```bash
 npm install
@@ -107,14 +107,14 @@ npm run dev
 
 Then open the printed local URL in your browser.
 
-## Build & Preview
+## 4. Build & Preview
 
 ```bash
 npm run build
 npm run preview
 ```
 
-## File Guide (What Each File Does)
+## 5. File Guide (What Each File Does)
 
 - `index.html` - HTML entry point with the `#root` element and script tag for `src/main.jsx`.
 - `package.json` - Project metadata, dependencies, and npm scripts for Vite.
@@ -123,7 +123,7 @@ npm run preview
 - `src/App.jsx` - Main UI demonstrating event handling examples and state.
 - `src/index.css` - Global styles and component classes used by the demo.
 
-## Explore
+## 6. Explore
 
 - Edit `src/App.jsx` to play with handlers and state.
 - Replace the image URLs in `images` for your own gallery.
