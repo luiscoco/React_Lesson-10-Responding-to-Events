@@ -8,6 +8,14 @@ A small, ready-to-run app that demonstrates:
 - `preventDefault` with form submission
 - Side effects within event handlers
 
+## Demo 
+
+<img width="1399" height="553" alt="image" src="https://github.com/user-attachments/assets/47666c81-151b-46fb-9d94-37cf2e4073b8" />
+
+<img width="1179" height="684" alt="image" src="https://github.com/user-attachments/assets/c424eae3-7776-43e8-97f7-f6b65047d87f" />
+
+<img width="1185" height="520" alt="image" src="https://github.com/user-attachments/assets/0193da1d-220a-406c-936f-00d84f9b4a73" />
+
 ## Features with Code Snippets
 
 Alert button that reads props inside an inline handler:
